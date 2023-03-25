@@ -1,0 +1,122 @@
+#include<stdio.h>
+#include<stdlib.h>
+//funcoes de cada operacao
+int soma(int v1,int v2){int resultado;resultado = v1 + v2;return resultado;}
+int sub(int v1,int v2){int resultado;resultado = v1 - v2;return resultado;}
+int mult(int v1,int v2){int resultado;resultado = v1 * v2;return resultado;}
+int divisao(int v1,int v2){int resultado;resultado = v1 / v2;return resultado;}
+
+int main(){
+//variaveis de escolha
+int selecao=1;
+//variaveis de incrementacao
+int i,contS=0,contSu=0,contMu=0,contDi=0;
+//variaveis de armazenamento
+int n1,n2,res,op,vetSoma[50],vetSu[50],vetMu[50],vetDi[50];
+
+    do
+    {
+        printf("MENU CALCULADORA\n");
+        printf("1. SOMA\n");
+        printf("2. SUBTRACAO\n");
+        printf("3. MULTIPLICACAO\n");
+        printf("4. DIVISAO\n");
+        printf("0. SAIR\n");
+
+        scanf("%d", &selecao);
+        system("cls");
+
+        switch(selecao)
+        {
+            case 1:
+			printf("###### SOMA ######\n");  
+        	printf("Digite o primeiro valor:");
+  			scanf("%d", &n1);
+  			printf("Digite o segundo valor:");
+  			scanf("%d", &n2);
+  			int res=soma(n1,n2);
+  			printf("resultado: %d \n\n",res);
+  			printf("TODOS OS RESULTADOS:\n");
+  			/*o contador vai incrementar para determinar ate onde o for vai,
+			o calculo i+(contS-1) serve para determinar a posicao do vetor*/
+  			contS++;
+  			for (i = 0; i < contS; i++) {
+       			vetSoma[i+(contS-1)]=res;     			
+       			printf("[%d]: %d ",i,vetSoma[i]);
+	        }
+	        printf("\n");
+	        system("pause");
+  			system("cls");	
+			
+            break;
+
+            case 2:
+            printf("###### SUBTRACAO ######\n");
+            printf("Digite o primeiro valor:");
+  			scanf("%d", &n1);
+  			printf("Digite o segundo valor:");
+  			scanf("%d", &n2);
+  			res=sub(n1,n2);
+  			printf("resultado: %d \n\n",res);
+  			printf("TODOS OS RESULTADOS:\n");
+  			contSu++;
+  			for (i = 0; i < contSu; i++) {
+       			vetSu[i+(contSu-1)]=res;     			
+       			printf("[%d]: %d ",i,vetSu[i]);
+	        }
+	        printf("\n");
+  			system("pause");
+  			system("cls");
+            break;
+
+            case 3:
+            printf("###### MULTIPLICACAO ######\n");
+            printf("Digite o primeiro valor:");
+  			scanf("%d", &n1);
+  			printf("Digite o segundo valor:");
+  			scanf("%d", &n2);
+  			res=mult(n1,n2);
+  			printf("resultado: %d \n\n",res);
+  			printf("TODOS OS RESULTADOS:\n");
+  			contMu++;
+  			for (i = 0; i < contMu; i++) {
+       			vetMu[i+(contMu-1)]=res;     			
+       			printf("[%d]: %d ",i,vetMu[i]);
+	        }
+	        printf("\n");
+  			system("pause");
+  			system("cls");
+            break;
+                
+            case 4:
+            printf("###### DIVISAO ######\n");
+            printf("Digite o primeiro valor:");
+  			scanf("%d", &n1);
+  			printf("Digite o segundo valor:");
+  			scanf("%d", &n2);
+  			res=divisao(n1,n2);
+  			printf("resultado: %d \n\n",res);
+  			printf("TODOS OS RESULTADOS:\n");
+  			contDi++;
+  			for (i = 0; i < contDi; i++) {
+       			vetDi[i+(contDi-1)]=res;     			
+       			printf("[%d]: %d ",i,vetDi[i]);
+	        }
+	        printf("\n");
+  			system("pause");
+  			system("cls");
+            break;
+
+            case 0:
+            printf("Ate a proxima!!!");
+            exit(1);
+            break;
+
+            default:
+            printf("Digite uma opcao valida\n");
+            system("pause");
+  			system("cls");
+        }
+    } while(selecao);
+return 0;
+}
