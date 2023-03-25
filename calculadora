@@ -25,7 +25,7 @@ int n1,n2,res,op,vetSoma[50],vetSu[50],vetMu[50],vetDi[50];
 
         scanf("%d", &selecao);
         system("cls");
-
+	
         switch(selecao)
         {
             case 1:
