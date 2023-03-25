@@ -38,7 +38,7 @@ int n1,n2,res,op,vetSoma[50],vetSu[50],vetMu[50],vetDi[50];
   			printf("resultado: %d \n\n",res);
   			printf("TODOS OS RESULTADOS:\n");
   			/*o contador vai incrementar para determinar ate onde o for vai,
-			o calculo i+(contS-1) serve para determinar a posicao do vetor*/
+			o calculo contS-1 serve para determinar a posicao do vetor*/
   			contS++;
   			for (i = 0; i < contS; i++) {
        			vetSoma[contS-1]=res;     			
