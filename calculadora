@@ -41,7 +41,7 @@ int n1,n2,res,op,vetSoma[50],vetSu[50],vetMu[50],vetDi[50];
 			o calculo i+(contS-1) serve para determinar a posicao do vetor*/
   			contS++;
   			for (i = 0; i < contS; i++) {
-       			vetSoma[i+(contS-1)]=res;     			
+       			vetSoma[contS-1]=res;     			
        			printf("[%d]: %d ",i,vetSoma[i]);
 	        }
 	        printf("\n");
@@ -61,7 +61,7 @@ int n1,n2,res,op,vetSoma[50],vetSu[50],vetMu[50],vetDi[50];
   			printf("TODOS OS RESULTADOS:\n");
   			contSu++;
   			for (i = 0; i < contSu; i++) {
-       			vetSu[i+(contSu-1)]=res;     			
+       			vetSu[contSu-1]=res;     			
        			printf("[%d]: %d ",i,vetSu[i]);
 	        }
 	        printf("\n");
@@ -80,7 +80,7 @@ int n1,n2,res,op,vetSoma[50],vetSu[50],vetMu[50],vetDi[50];
   			printf("TODOS OS RESULTADOS:\n");
   			contMu++;
   			for (i = 0; i < contMu; i++) {
-       			vetMu[i+(contMu-1)]=res;     			
+       			vetMu[contMu-1]=res;     			
        			printf("[%d]: %d ",i,vetMu[i]);
 	        }
 	        printf("\n");
@@ -99,7 +99,7 @@ int n1,n2,res,op,vetSoma[50],vetSu[50],vetMu[50],vetDi[50];
   			printf("TODOS OS RESULTADOS:\n");
   			contDi++;
   			for (i = 0; i < contDi; i++) {
-       			vetDi[i+(contDi-1)]=res;     			
+       			vetDi[contDi-1]=res;     			
        			printf("[%d]: %d ",i,vetDi[i]);
 	        }
 	        printf("\n");
