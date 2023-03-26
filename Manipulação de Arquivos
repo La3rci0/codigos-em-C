@@ -29,7 +29,7 @@ for(i=0;i<4;i++){
 	media=(p1+p2+p3);
 	total=media/3;
 	
-	
+
 	if(total<5){
 		c='I';
 	}else if(total >= 5 && total < 7){
