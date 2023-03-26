@@ -12,7 +12,7 @@ int selecao=1;
 //variaveis de incrementacao
 int i,contS=0,contSu=0,contMu=0,contDi=0;
 //variaveis de armazenamento
-int n1,n2,res,op,vetSoma[50],vetSu[50],vetMu[50],vetDi[50];
+int n1,n2,res,vetSoma[50],vetSu[50],vetMu[50],vetDi[50];
 
     do
     {
