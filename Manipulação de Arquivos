@@ -53,3 +53,11 @@ for(i=0;i<4;i++){
 	
 }
 
+
+/*crie um arquivo entrada.txt, salve as seguintes informações para que o codigo consiga ler*/
+
+/*AstrogildoCaminosflau 2.0 4.3 6.5 
+AlanTuring 8.5 9.0 10.0 
+FulanadeTal 7.0 8.2 8.6 
+ManuelSantos 6.0 4.5 5.2
+*/
