@@ -1,0 +1,55 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+
+main(){
+	
+	FILE *entra;
+	FILE *sai;
+	char nome[80];
+	float p1,p2,p3;
+ 	float media=0,total=0;
+  	int i;
+  	char c;
+  entra = fopen("entrada.txt", "r");
+  if(entra == NULL)
+  {
+     printf("ERRO!");
+     return 1;
+  }
+  sai = fopen("saida.txt", "w");
+  if(sai == NULL)
+  {
+     printf("ERRO!");
+     return 1;
+  }
+for(i=0;i<4;i++){
+
+	fscanf (entra,"%s  %f  %f %f",nome,&p1,&p2,&p3);
+	media=(p1+p2+p3);
+	total=media/3;
+	
+	
+	if(total<5){
+		c='I';
+	}else if(total >= 5 && total < 7){
+		c='R';
+	}else if(total >= 7 && total < 9){
+	    c='B';	
+	}else if(total >= 9){
+		c='E';
+	}
+	
+	 
+
+	printf("Nome: %s \nn1: %0.1f n2: %0.1f n3: %0.1f media: %0.1f\n",nome,p1,p2,p3,total); 
+	fprintf(sai,"%s %0.1f %c\n",nome,total,c);
+
+}
+  fclose(entra);
+  fclose(sai);
+  	printf("\n");
+  system("pause");
+	
+}
+
