@@ -34,7 +34,7 @@ int n1,n2,res,vetSoma[50],vetSu[50],vetMu[50],vetDi[50];
   			scanf("%d", &n1);
   			printf("Digite o segundo valor:");
   			scanf("%d", &n2);
-  			int res=soma(n1,n2);
+  			res=soma(n1,n2);
   			printf("resultado: %d \n\n",res);
   			printf("TODOS OS RESULTADOS:\n");
   			/*o contador vai incrementar para determinar ate onde o for vai,
